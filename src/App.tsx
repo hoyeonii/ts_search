@@ -73,16 +73,12 @@ function App() {
           switch (sortBy) {
             case "Rating":
               return b.rating - a.rating;
-              break;
             case "Deals":
               return b.discountPercentage - a.discountPercentage;
-              break;
             case "Lowest":
               return a.price - b.price;
-              break;
             case "Highest":
               return b.price - a.price;
-              break;
             default:
               return b.price - a.price;
           }
